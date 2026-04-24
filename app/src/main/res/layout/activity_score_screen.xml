@@ -94,8 +94,8 @@
 
     <TextView
         android:id="@+id/tvAnswers"
-        android:layout_width="370dp"
-        android:layout_height="0dp"
+        android:layout_width="383dp"
+        android:layout_height="183dp"
         android:layout_marginBottom="81dp"
         android:background="#FFFFFF"
         android:textSize="20sp"

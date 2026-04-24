@@ -1,5 +1,6 @@
 package com.example.lifehackormythapplication
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -14,6 +15,7 @@ class ScoreScreen : AppCompatActivity() {
     lateinit var btnClose: Button
     lateinit var btnHome: Button
 
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_score_screen)
@@ -33,9 +35,27 @@ class ScoreScreen : AppCompatActivity() {
         val surname = intent.getStringExtra("surname")
         val sName = intent.getStringExtra("sName")
 
+        // Displaying the result message based on the score achieved by the user
+        if(score == total){
+            tvAnswers.text = "Answers: $answers \nCongratulations! You got all the answers correct! You are a Marvel superfan!🦸"
+        }else{
+            if(score == 8){
+                tvAnswers.text = "Answers: $answers \nGreat job! You know your Marvel trivia well. Keep it up!"
+            }else{
+                if(score == 5 || score == 6 || score == 7){
+                    tvAnswers.text = "Answers: $answers \nNot bad! You have a good knowledge of Marvel trivia, but there's still room for improvement. Keep learning and exploring the Marvel universe!"
+                }else{
+                    if(score < 5){
+                        tvAnswers.text = "Answers: $answers \nDon't worry! Marvel trivia can be tricky, and it's all about having fun. " +
+                                "Keep exploring the Marvel universe, and you'll get better with time." + "REMEMBER!! to top up your Marvel knowledge," +
+                                " maybe try again and see if you can improve your score!"
+                    }
+                }
+            }
+        }
+
         tvResult.text = "Correct Answers: $score / $total"
         tvScore.text = "Score: $score"
-        tvAnswers.text = "Answers: $answers"
         tvRep.text = "User: $name $surname \t$sName"
 
 
