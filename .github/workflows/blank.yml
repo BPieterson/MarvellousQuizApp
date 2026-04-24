@@ -1,7 +1,7 @@
 name: Android CI
 
-env:00 
-0   #0 The name of the main module repository
+env:
+  # The name of the main module repository
   main_project_module: Social Spark
 
   # The name of the Play Store
