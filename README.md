@@ -5,7 +5,8 @@
 <ul>
   <li>Introduction</li>
 <li>Features</li>
-
+<li></li>>
+<li>References</li>>
 </ul>
 
 Marvellous Fans is a fun and colourful quiz app that tests users on their Marvel knowledge. Which tracks their times and scores.
