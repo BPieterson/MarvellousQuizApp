@@ -75,7 +75,7 @@
         android:layout_height="90dp"
         android:background="#FFFFFF"
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="19sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -86,11 +86,12 @@
 
     <TextView
         android:id="@+id/tvUName"
-        android:layout_width="150dp"
-        android:layout_height="28dp"
-        android:layout_marginStart="16dp"
+        android:layout_width="149dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="24dp"
         android:layout_marginBottom="12dp"
         android:background="#FAF8F8"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/Ipics"
         app:layout_constraintStart_toStartOf="parent"
@@ -107,5 +108,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvUName"
         tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvTimer"
+        android:layout_width="134dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFFEFE"
+        android:text="00:00:00"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/Ipics"
+        app:layout_constraintTop_toBottomOf="@+id/Heading" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

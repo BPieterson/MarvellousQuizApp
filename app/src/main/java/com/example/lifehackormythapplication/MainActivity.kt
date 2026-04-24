@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity
 class MainActivity : AppCompatActivity() {
     lateinit var tvQuestions: TextView
     lateinit var tvUName : TextView
+    lateinit var tvTimer : TextView
     lateinit var iPics : ImageView
     lateinit var rgOptions: RadioGroup
     lateinit var options1: RadioButton
@@ -74,6 +75,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         tvQuestions = findViewById(R.id.tvQuestions)
         tvUName = findViewById(R.id.tvUName)
+        tvTimer = findViewById(R.id.tvTimer)
         iPics = findViewById(R.id.Ipics)
         rgOptions = findViewById(R.id.rgOptions)
         options1 = findViewById(R.id.Option1)
