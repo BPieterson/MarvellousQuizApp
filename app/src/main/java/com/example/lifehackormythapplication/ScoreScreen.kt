@@ -40,7 +40,7 @@ class ScoreScreen : AppCompatActivity() {
         if(score == total){
             tvAnswers.text = "Answers: Congratulations! You got all the answers correct! You are a Marvel superfan!🦸"
         }else{
-            if(score == 8){
+            if(score >= 8){
                 tvAnswers.text = "Answers: Great job! You know your Marvel trivia well. Keep it up!"
             }else{
                 if(score == 5 || score == 6 || score == 7){

@@ -84,14 +84,16 @@ class MainActivity : AppCompatActivity() {
         val sName = intent.getStringExtra("sName")
         tvUName.text = sName
 
+        //Array index that would in the quiz screen
         iPics.setImageResource(images[currentQuestion])
         tvQuestions.text = questions[currentQuestion]
         options1.text = options[currentQuestion][0]
         options2.text = options[currentQuestion][1]
 
-
+        //The button next allows us to get to the next question. Also checks the user's answer and scores.
         btnNext.setOnClickListener {
 
+            // Getting the selected option's id
             val optionId = rgOptions.checkedRadioButtonId
 
             val answerIndex = when (optionId) {
@@ -100,6 +102,7 @@ class MainActivity : AppCompatActivity() {
                 else ->  -1
             }
 
+            // Checking and making sure that the user has selected the correct answer, which also count their scores
             if (answerIndex == correctAnswers[currentQuestion]){
                 score ++
             }
