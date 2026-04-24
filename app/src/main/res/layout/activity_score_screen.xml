@@ -106,4 +106,14 @@
         app:layout_constraintTop_toBottomOf="@+id/tvScore"
         app:layout_constraintVertical_bias="0.628" />
 
+    <Button
+        android:id="@+id/btnReview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="136dp"
+        android:backgroundTint="@color/red"
+        android:text="Review"
+        app:layout_constraintEnd_toEndOf="@+id/tvResult"
+        tools:layout_editor_absoluteY="261dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

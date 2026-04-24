@@ -109,18 +109,4 @@
         app:layout_constraintTop_toBottomOf="@+id/tvUName"
         tools:srcCompat="@tools:sample/avatars" />
 
-    <TextView
-        android:id="@+id/tvTimer"
-        android:layout_width="134dp"
-        android:layout_height="32dp"
-        android:layout_marginTop="16dp"
-        android:background="#FFFEFE"
-        android:text="00:00:00"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/Ipics"
-        app:layout_constraintTop_toBottomOf="@+id/Heading" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
