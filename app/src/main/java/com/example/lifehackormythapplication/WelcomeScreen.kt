@@ -27,7 +27,9 @@ class WelcomeScreen : AppCompatActivity() {
                 val surname = txtSurname.text.toString()
                 val sName = txtSName.text.toString()
 
+            // Insuring that all fields are filled before, user can begin the game
             if(name.isEmpty() || surname.isEmpty() || sName.isEmpty()){
+
                 Toast.makeText(this, "Please fill all the fields to begin the game", Toast.LENGTH_SHORT).show()
             }else{
                 val intent = Intent(this, MainActivity::class.java)
