@@ -25,7 +25,7 @@ Marvellous Fans is a fun and colourful quiz app that tests users on their Marvel
 <ol>
 <li>Fill in the fields to begin quiz</li>
 <li>Select and answer all question</li>
-<li>Select the review buttons to review answers</li>>
+<li>Select the review buttons to review answers</li>
 </ol>
 
 ## Youtube
